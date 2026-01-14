@@ -51,7 +51,7 @@ main > section{
 
 /* header styles */
 .navbar{
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .brand{
@@ -96,6 +96,7 @@ main > section{
 .banner-image{
     width: 100%;
     margin: 50px auto;
+    
 }
 /* team and features related styles */
 .teams{
@@ -179,7 +180,7 @@ main > section{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 80px auto ;
+    margin: 80px auto 40px;
 }
 .some-facts .facts-title{
     font-size: 2.1rem;
@@ -224,7 +225,7 @@ footer{
     margin: 0 auto;
     align-items: center;
     text-align: center;
-    margin: 130px auto 216px;
+    margin: 100px auto 46px;
     padding: 30px;
     background-color: #FFF4E7;
     border-radius: 8px;
