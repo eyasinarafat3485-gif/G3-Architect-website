@@ -72,7 +72,6 @@ main > section{
     text-decoration: none;
 }
 .banner, .navbar{
-    max-width: 1360px;
     margin: 0 auto;
 }
 /* banner releated style */
@@ -96,20 +95,21 @@ main > section{
 }
 .banner-image{
     width: 100%;
-    max-width: 1440px;
-    margin-top: 0 auto;
-    padding: 50px 0;
-
+    margin: 50px auto;
 }
 /* team and features related styles */
 .teams{
     align-items: center;
 }
-.our-features{
-    padding-left: 70px;
+.team-img-container img{
+    width: 280px;
+    height: 280px;
 }
-.fuatures-title{
-    font-size: 45px;
+.our-features{
+    padding-left: 50px;
+}
+.features-title{
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 24px;
 }
@@ -126,25 +126,25 @@ main > section{
     max-width: 530px;
 }
 .feature{
-    width:100%;
-   
-    max-width: 1440px;
-    gap: 100px;
-    
+    gap: 70px;
+}
+.featured-architect img{
+    width: 430px;
+    height: 650px;
 }
 #feature-section-title{
     border-left: 5px solid #FF900E;
     padding-left: 20px;
 }
 .feature h3{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 24px;
 }
 .feature-card{
-    padding: 30px;
-    box-shadow: 0 4px 30px 0  rgba(0, 0, 0, 0.06);
-    margin:30px auto 20px;
+    padding: 15px;
+    box-shadow: 0 4px 25px 0  rgba(0, 0, 0, 0.06);
+    margin: 15px auto 10px;
     border-radius: 8px;
 }
 .feature-card .feature-title{
@@ -153,37 +153,33 @@ main > section{
     margin-bottom: 10px;  
 }
 #experience-badge{
-    padding: 40px 42px;
+    padding: 30px 22px;
     font-size: 1.5rem;
     font-weight: 500;
-    margin-left: -70px ;
-    margin-top: -150px;
+    margin-left: -50px ;
+    margin-top: -80px;
 }
 #experience-year{
     font-size: 4rem;
     font-weight: 700;
 }
-.featured-architect img{
-    width: 100%;
-}
+
 
 /* some facts related styles */
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 50px;
-    /* width: 75% ; */
-    max-width: 1440px;
+    margin-bottom: 40px;
 }
 .fact-card{
     border: 1px solid #FF900E;
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 220px;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 120px;
+    margin: 80px auto ;
 }
 .some-facts .facts-title{
     font-size: 2.1rem;
@@ -237,11 +233,18 @@ footer{
 /* Responsive media query */
 @media screen and (max-width:576px) {
     main{
-        width: 100%;
-    
+        width: 100%;  
     }
+    .banner-image{
+    width: 100%;
+    margin: 50px auto;
+   }
     .fact-card{
-        width: 100%;
+        width: 80%;
+        gap: 0px;
+    }
+    .some-facts h3, p{
+       margin: auto 15px;
     }
     .navbar,
     .nav-link, 
@@ -264,7 +267,10 @@ footer{
         gap: 50px;
     }
     .our-features{
-        margin-left: 15px;
+        margin: 25px 10px 15px 0;
+    }
+    .feature h3 ,p{
+       margin: 0 15px 15px;
     }
     #experience-badge{
         margin-top: 20px;
@@ -279,6 +285,13 @@ footer{
     }
     .our-features{
         margin: 50px auto ;
+    }
+    .navbar,
+    .nav-link, 
+    .feature,
+    .teams{
+        width: 100%;
+        flex-direction: column;
     }
     .sponsor-companies , .facts-container{
         grid-template-columns: repeat(2, 1fr);
