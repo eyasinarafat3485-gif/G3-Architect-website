@@ -127,7 +127,7 @@ main > section{
 }
 .feature{
     width:100%;
-    min-width: 1280px;
+   
     max-width: 1440px;
     gap: 100px;
     
@@ -236,9 +236,18 @@ footer{
 }
 /* Responsive media query */
 @media screen and (max-width:576px) {
+    main{
+        width: 100%;
+    
+    }
+    .fact-card{
+        width: 100%;
+    }
     .navbar,
     .nav-link, 
+    .feature,
     .teams{
+        width: 100%;
         flex-direction: column;
     }
     .team-img-container , 
