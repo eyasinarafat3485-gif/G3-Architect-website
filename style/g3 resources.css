@@ -125,6 +125,48 @@ main > section{
 .our-features{
     max-width: 530px;
 }
+.feature{
+    width:100%;
+    min-width: 1280px;
+    max-width: 1440px;
+    gap: 100px;
+    
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature h3{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0  rgba(0, 0, 0, 0.06);
+    margin:30px auto 20px;
+    border-radius: 8px;
+}
+.feature-card .feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;  
+}
+#experience-badge{
+    padding: 40px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -70px ;
+    margin-top: -150px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.featured-architect img{
+    width: 100%;
+}
+
 /* some facts related styles */
 .facts-container{
     display: grid;
@@ -141,6 +183,12 @@ main > section{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 120px;
+}
+.some-facts .facts-title{
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 .fact-number{
     font-size: 2.8rem;
@@ -160,6 +208,10 @@ main > section{
     margin: 50px auto;
     text-align: center;
 }
+.sponsor-info h3{
+    font-size: 2.1rem;
+    font-weight: 700;
+}
 .sponsor-info p{
     margin-top: 24px;
 }
@@ -170,6 +222,18 @@ main > section{
 .sponsor-companies img{
     filter:grayscale(100%)
 }
+footer{
+    width: 75%;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    margin: 130px auto 216px;
+    padding: 30px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    
+}
 /* Responsive media query */
 @media screen and (max-width:576px) {
     .navbar,
@@ -179,8 +243,7 @@ main > section{
     }
     .team-img-container , 
     .facts-container ,
-    .sponsor-companies
-    {
+    .sponsor-companies{
         grid-template-columns: repeat(1, 1fr);
     }
     .facts-container{
@@ -194,11 +257,15 @@ main > section{
     .our-features{
         margin-left: 15px;
     }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 /* mediun size device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams, .feature{
         flex-direction: column;
     }
     .our-features{
@@ -208,6 +275,10 @@ main > section{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+      #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     
 }
