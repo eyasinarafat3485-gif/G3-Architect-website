@@ -71,6 +71,9 @@ main > section{
     font-weight: 500;
     text-decoration: none;
 }
+.nav-link a:hover{
+    color: blue;
+}
 .banner, .navbar{
     margin: 0 auto;
 }
@@ -83,6 +86,9 @@ main > section{
 }
 .banner-content button{
     margin-top: 32px;
+}
+.banner-content button:hover{
+    color: black;
 }
 .banner-title{
     font-size: 4rem;
@@ -107,6 +113,7 @@ main > section{
     height: 280px;
 }
 .our-features{
+    max-width: 530px;
     padding-left: 50px;
 }
 .features-title{
@@ -123,8 +130,8 @@ main > section{
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
-.our-features{
-    max-width: 530px;
+.our-features button:hover{
+    color: black;
 }
 .feature{
     gap: 70px;
